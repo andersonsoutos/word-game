@@ -1,3 +1,36 @@
 .invisivel {
-    display: none;
+  display: none;
 }
+
+#playerPalavra {
+  margin-bottom: 1rem;
+}
+
+#playerPalavra, #playerAdivinha {
+  border: 1px solid black;
+  padding: 3rem;
+  text-align: center;
+}
+
+#playerPalavra input, #playerAdivinha input {
+  width: 50%;
+  height: 35px;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  border: 3px solid gray;
+  text-align: center;
+}
+
+#playerPalavra button, #playerAdivinha button {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+}
+
+#forca {
+  margin-bottom: 1rem;
+}
+
+#forca span {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=estilo.css.map */

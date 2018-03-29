@@ -11,19 +11,18 @@
 
 <!-- Campos do Adiversário -->
 <div id="playerPalavra">
-<input type="text" id="palavraDigitada" placeholder="Digite uma palavra para jogar"/>
+<input type="text" id="palavraDigitada" placeholder="Digite uma palavra para jogar"/><br>
 <button type="button" id="btnJogar">Jogar</button>
 </div>
 
 <div id="playerAdivinha">
-    <input type="text" id="palavraSugerida" placeholder="Digite uma palavra ou letra"/>
+     <!-- esse campo vai receber as palavras digitadas, acertos e erros -->
+    <div id="forca"></div>
+    <input type="text" id="palavraSugerida" placeholder="Digite uma palavra ou letra"/><br>
     <button type="button" id="btnEnviar">Enviar</button>
 </div>
 
-<div id="placar">
-    <!-- esse campo vai receber as palavras digitadas, acertos e erros -->
 
-</div>
 
 
 
@@ -33,5 +32,5 @@
 
 </body>
 <script src="js/variaveis.js"></script>
-<script src="js/players.js"></script>
+<script src="js/logica_do_jogo.js"></script>
 </html>
