@@ -8,4 +8,6 @@ var i = 0;
 var campos = "";
 
 letrasDigitadas = new Array();
-var letrasCertas = "";
+var letrasCertas = false;
+
+numeroTentativas = 0;

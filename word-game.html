@@ -11,15 +11,39 @@
 
 <!-- Campos do Adiversário -->
 <div id="playerPalavra">
-<input type="text" id="palavraDigitada" placeholder="Digite uma palavra para jogar"/><br>
+<input type="password" id="palavraDigitada" placeholder="Digite uma palavra para jogar"/><br>
 <button type="button" id="btnJogar">Jogar</button>
 </div>
 
 <div id="playerAdivinha">
      <!-- esse campo vai receber as palavras digitadas, acertos e erros -->
     <div id="forca"></div>
-    <input type="text" id="palavraSugerida" placeholder="Digite uma palavra ou letra"/><br>
-    <button type="button" id="btnEnviar">Enviar</button>
+    <p>Digite uma letra</p>
+    <input type="text" id="palavraSugerida" placeholder=""/><br>
+    <button type="button" id="btnEnviar">Enviar</button> <input type="checkbox" id="checkBoxPalavra">Arriscar palavra<br>
+</div>
+
+<div id="placar">
+    <h1>Placar</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Numero de Tentativas</th>
+                <th>Letras Acertadas</th>
+                <th>Letras Erradas</th>
+                <th>Tempo Gasto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="rodada">
+                <td id="numTentativas">2</td>
+                <td id="letAcertadas"> A | B | C</td>
+                <td id="letErradas">X | Y | D</td>
+                <td id="tempGasto"> 30s</td>
+            </tr>
+        </tbody>
+    </table>
+
 </div>
 
 
