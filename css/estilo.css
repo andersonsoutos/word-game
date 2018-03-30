@@ -1,3 +1,7 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .invisivel {
   display: none;
 }
@@ -10,24 +14,24 @@
   border: 1px solid black;
   padding: 3rem;
   text-align: center;
+  border-radius: 15px;
 }
 
 #playerPalavra input[type=text], #playerPalavra input[type=password], #playerAdivinha input[type=text], #playerAdivinha input[type=password] {
-  width: 50%;
-  height: 35px;
+  height: 2rem;
   border-radius: 30px;
   margin-bottom: 1rem;
-  border: 3px solid gray;
+  border: 1px solid gray;
   text-align: center;
+  text-transform: uppercase;
 }
 
 #playerPalavra button, #playerAdivinha button {
   display: inline-block;
-  padding: 0.5rem 2rem;
-}
-
-#playerAdivinha input {
-  width: 10% !important;
+  height: 2rem;
+  padding: 0 2rem;
+  border-style: none;
+  border-radius: 10px;
 }
 
 #forca {
@@ -38,7 +42,13 @@
   font-size: 2rem;
 }
 
-.aumentaCampo {
-  width: 50% !important;
+.campoPalavra {
+  width: 50%;
+  border-radius: 30px;
+}
+
+.campoLetra {
+  width: 10%;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=estilo.css.map */

@@ -57,12 +57,21 @@ function posicaoLetra (posicao, letra){
 
 //DEFININDO O CAMPO DE PALAVRAS OU LETRAS
 
-var checkboxP = document.querySelector("#checkBoxPalavra");
-checkboxP.addEventListener("click", function() {
-    if (checkboxP.checked == true) {
-        campoSugerido = document.querySelector("#palavraSugerida");
-        campoSugerido.classList.add ("aumentaCampo");
-     }
+var checkboxP = document.querySelector("#opcPalavra");
+checkboxP.addEventListener("click", function(){
+    var arriscarPalavra = document.querySelector("#palavraSugerida");
+    if (checkboxP.checked == true ) {
+    console.log("evento click ok");
+    arriscarPalavra.maxLength = 50;
+    arriscarPalavra.classList.add("campoPalavra");
+    arriscarPalavra.classList.remove("campoLetra");
+} else {
+    console.log("evento desclicado")
+    arriscarPalavra.maxLength = 1;
+    arriscarPalavra.classList.remove("campoPalavra");
+    arriscarPalavra.classList.add("campoLetra");
+}
+
 });
 
 

@@ -5,25 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Jogo de Palavras</title>
 </head>
 <body>
-
+<h1> Jogo da Forca </h1>
 <!-- Campos do Adiversário -->
 <div id="playerPalavra">
-<input type="password" id="palavraDigitada" placeholder="Digite uma palavra para jogar"/><br>
+    <p>Digita no campo a baixo a uma uma palavra</p>
+<input type="password" id="palavraDigitada" placeholder="Exemplo: Teste"/>
 <button type="button" id="btnJogar">Jogar</button>
 </div>
 
 <div id="playerAdivinha">
-     <!-- esse campo vai receber as palavras digitadas, acertos e erros -->
     <div id="forca"></div>
-    <p>Digite uma letra</p>
-    <input type="text" id="palavraSugerida" placeholder=""/><br>
-    <button type="button" id="btnEnviar">Enviar</button> <input type="checkbox" id="checkBoxPalavra">Arriscar palavra<br>
+    <p>Digite uma letra no campo abaixo</p>
+    <input type="text" id="palavraSugerida" class="campoLetra" placeholder="Testa" maxlength="1"/><br>
+    <button type="button" id="btnEnviar">Enviar</button>
+    <span><input type="checkbox" id="opcPalavra">Arriscar palavra</span>
 </div>
 
+<!-- 
 <div id="placar">
+
     <h1>Placar</h1>
     <table>
         <thead>
@@ -43,6 +47,8 @@
             </tr>
         </tbody>
     </table>
+
+-->
 
 </div>
 
